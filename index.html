@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ritu & Bhavya - Wedding Invitation (January 2, 2027)</title>
+  <meta name="description" content="Wedding Invitation of Chi. Ritu & Chi. Bhavya. Saturday, January 2, 2027 at Bhavan's Party Plot, Vadodara.">
+
+  <!-- Favicon / Monogram Icon -->
+  <link rel="icon" type="image/png" href="images/hastamelap_seal.png">
+
+  <!-- Google Fonts for Luxury & Gujarati Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Great+Vibes&family=Hind+Vadodara:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&family=Noto+Serif+Gujarati:wght@400;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Floating Confetti Canvas -->
+  <canvas id="confetti-canvas"></canvas>
+
+  <!-- ==========================================================================
+       Header & Navigation Bar
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="#home" class="brand-monogram">
+        <div class="brand-seal">
+          <img src="images/hastamelap_seal.png" alt="R & B Monogram">
+        </div>
+        <div class="brand-text">R <span>&</span> B</div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="desktop-nav">
+        <a href="#home" class="nav-link" data-i18n="nav_home">Home</a>
+        <a href="#story" class="nav-link" data-i18n="nav_story">Our Story</a>
+        <a href="#schedule" class="nav-link" data-i18n="nav_schedule">Ceremonies</a>
+        <a href="#venue" class="nav-link" data-i18n="nav_venue">Venue & Travel</a>
+        <a href="#family" class="nav-link" data-i18n="nav_family">Family</a>
+        <a href="#faq" class="nav-link" data-i18n="nav_faq">FAQ</a>
+        <a href="#kankotriModal" id="btnOpenKankotriModalNav" class="nav-link" data-i18n="nav_kankotri">Original Card</a>
+      </nav>
+
+      <!-- Nav Actions (Language & Music Toggles) -->
+      <div class="nav-actions">
+        <button id="btnLangToggle" class="btn-lang-toggle" title="Switch Language">
+          <i class="fa-solid fa-language"></i> ગુજરાતી
+        </button>
+        <button id="btnMusicToggle" class="btn-music-toggle" title="Play Auspicious Wedding Shehnai">
+          <i class="fa-solid fa-music"></i>
+        </button>
+        <button id="btnMobileToggle" class="btn-mobile-toggle" aria-label="Toggle menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Navigation -->
+    <div id="mobileNavMenu" class="mobile-nav-menu">
+      <a href="#home" class="nav-link" data-i18n="nav_home">Home</a>
+      <a href="#story" class="nav-link" data-i18n="nav_story">Our Story</a>
+      <a href="#schedule" class="nav-link" data-i18n="nav_schedule">Ceremonies</a>
+      <a href="#venue" class="nav-link" data-i18n="nav_venue">Venue & Travel</a>
+      <a href="#family" class="nav-link" data-i18n="nav_family">Family</a>
+      <a href="#faq" class="nav-link" data-i18n="nav_faq">FAQ</a>
+      <a href="#kankotriModal" id="btnOpenKankotriModalMobile" class="nav-link" data-i18n="nav_kankotri">Original Card</a>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       Hero Section
+       ========================================================================== -->
+  <section id="home" class="hero-section">
+    <div class="hero-arch-pattern"></div>
+    <div class="container">
+
+      <!-- Auspicious Invocations -->
+      <div class="spiritual-invocations">
+        <span class="invocation-badge">।। જય યોગેશ્વર ।।</span>
+        <span class="invocation-badge">।। શ્રી ગણેશાય નમ: ।।</span>
+        <span class="invocation-badge">।। જય આશાપુરી માતાજી ।।</span>
+      </div>
+
+      <!-- Sacred Ganesha Emblem -->
+      <div class="ganesha-wrapper">
+        <img src="images/lord_ganesha.png" alt="Shree Ganesha" class="ganesha-img">
+      </div>
+
+      <!-- Shloka Card -->
+      <div class="shloka-card">
+        <p class="shloka-text" data-i18n="shloka">
+          વક્રતુંડ મહાકાય સૂર્યકોટિ સમપ્રભ: ।<br>
+          નિર્વિઘ્નં કુરુ મે દેવ સર્વકાર્યેષુ સર્વદા ॥
+        </p>
+        <p class="shloka-translation" data-i18n="shloka_trans">
+          O Lord Ganesha of curved trunk and immense radiance like millions of suns, please make all our endeavors obstacle-free forever.
+        </p>
+      </div>
+
+      <!-- Wedding Header Announcement -->
+      <p class="hero-tagline" data-i18n="hero_tagline">We're Getting Married!</p>
+      <h1 class="hero-main-title" data-i18n="hero_title">શુભવિવાહ</h1>
+
+      <!-- Couple Central Hastamelap Seal -->
+      <div class="couple-badge-wrapper">
+        <img src="images/hastamelap_seal.png" alt="Ritu and Bhavya - Hastamelap" class="couple-badge-img">
+      </div>
+
+      <!-- Couple Names Hero Display -->
+      <h2 class="couple-names-hero">
+        <span class="bride-name" data-i18n="bride_name">ચિ. રિતુ</span>
+        <span class="amp">&</span>
+        <span class="groom-name" data-i18n="groom_name">ચિ. ભવ્ય</span>
+      </h2>
+
+      <!-- Date & Venue Pill -->
+      <div class="hero-event-pill">
+        <span data-i18n="hero_date">Saturday, January 2, 2027</span>
+        <span class="pill-dot"></span>
+        <span data-i18n="hero_venue">Bhavan's Party Plot, Vadodara</span>
+      </div>
+
+      <!-- Countdown Timer Box -->
+      <div class="countdown-container">
+        <div class="countdown-title" data-i18n="countdown_title">Counting Down to Our Special Day</div>
+        <div class="countdown-grid">
+          <div class="countdown-unit">
+            <span id="days" class="countdown-number">00</span>
+            <span class="countdown-label" data-i18n="cd_days">Days</span>
+          </div>
+          <div class="countdown-unit">
+            <span id="hours" class="countdown-number">00</span>
+            <span class="countdown-label" data-i18n="cd_hours">Hours</span>
+          </div>
+          <div class="countdown-unit">
+            <span id="minutes" class="countdown-number">00</span>
+            <span class="countdown-label" data-i18n="cd_mins">Minutes</span>
+          </div>
+          <div class="countdown-unit">
+            <span id="seconds" class="countdown-number">00</span>
+            <span class="countdown-label" data-i18n="cd_secs">Seconds</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA Action Buttons -->
+      <div class="hero-cta-group">
+        <a href="#schedule" class="btn btn-primary">
+          <i class="fa-solid fa-calendar-days"></i>
+          <span data-i18n="btn_schedule">View Ceremonies</span>
+        </a>
+        <a href="#" id="btnAddToCalendar" class="btn btn-secondary">
+          <i class="fa-regular fa-calendar-plus"></i>
+          <span data-i18n="btn_calendar">Add to Calendar</span>
+        </a>
+        <button id="btnOpenKankotriModal" class="btn btn-gold">
+          <i class="fa-solid fa-file-pdf"></i>
+          <span data-i18n="btn_kankotri">View Original Kankotri</span>
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Our Story & The Couple Section
+       ========================================================================== -->
+  <section id="story" class="story-section">
+    <div class="container">
+      
+      <!-- Poetic Kankotri Stanza Quote -->
+      <div class="poem-quote-box">
+        <div class="quote-ornament">✦ ❖ ✦</div>
+        <div class="poem-lines">
+          થશે આપનું આગમન તો ફૂલોમાં સુગંધ પુરાઈ જશે,<br>
+          રૂપેરા આભમાં ખુશીથી પક્ષીઓ લહેરાઈ જશે,<br>
+          આપ પધારશો અમારી દીદીના લગ્નમાં તો હૈયું હરખાઈ જશે.
+        </div>
+        <div class="poem-translation" data-i18n="poem_trans">
+          “Your presence will fill the flowers with fragrant delight, birds will soar joyfully across the silver sky; when you grace our Didi's wedding, our hearts will rejoice with unbound joy.”
+        </div>
+      </div>
+
+      <!-- Section Header -->
+      <div class="section-header">
+        <span class="section-subtitle" data-i18n="story_subtitle">With the Blessings of Ashapuri Mata</span>
+        <h2 class="section-title" data-i18n="story_title">Our Next Chapter Begins</h2>
+        <div class="section-divider">
+          <i class="fa-solid fa-heart divider-icon"></i>
+        </div>
+      </div>
+
+      <!-- Couple Profile & Illustration Showcase -->
+      <div class="couple-showcase-grid">
+
+        <!-- The Bride Card -->
+        <div class="couple-profile-card">
+          <span class="profile-role-tag" data-i18n="bride_tag">The Bride (કન્યા)</span>
+          <h3 class="profile-name">Ritu</h3>
+          <h4 class="profile-gujarati-name">ચિ. રિતુ</h4>
+          <p class="profile-parents-info" data-i18n="bride_family">
+            Beloved Daughter of <strong>Shri Vijaybhai Rasikbhai Patel</strong> & <strong>A.Sau. Alkaben Vijaybhai Patel</strong><br>
+            Granddaughter of Late Rasikbhai Ganpatbhai Patel & Gangs. Hansaben Patel<br>
+            Native of Ganeshpura
+          </p>
+        </div>
+
+        <!-- Center Couple Illustration -->
+        <div class="couple-center-illustration">
+          <img src="images/couple_illustration.png" alt="Bride and Groom exchanging garlands" class="couple-illustration-img">
+          <div class="union-knot-icon">
+            <i class="fa-solid fa-infinity"></i>
+          </div>
+        </div>
+
+        <!-- The Groom Card -->
+        <div class="couple-profile-card">
+          <span class="profile-role-tag" data-i18n="groom_tag">The Groom (વરરાજા)</span>
+          <h3 class="profile-name">Bhavya</h3>
+          <h4 class="profile-gujarati-name">ચિ. ભવ્ય</h4>
+          <p class="profile-parents-info" data-i18n="groom_family">
+            Beloved Son of <strong>Shri Tarunbhai Mahendrabhai Patel</strong> & <strong>A.Sau. Jignaben Tarunbhai Patel</strong>
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Ceremonies & Schedule Section
+       ========================================================================== -->
+  <section id="schedule" class="schedule-section">
+    <div class="container">
+
+      <div class="section-header">
+        <span class="section-subtitle" data-i18n="schedule_subtitle">Ceremony & Celebrations</span>
+        <h2 class="section-title" data-i18n="schedule_title">મંગલ અવસર</h2>
+        <div class="section-divider">
+          <i class="fa-solid fa-om divider-icon"></i>
+        </div>
+        <p class="section-description" data-i18n="schedule_desc">
+          We cordially invite you and your family to join us in every blessed celebration.
+        </p>
+      </div>
+
+      <!-- DAY 1: Friday, 01-01-2027 -->
+      <div class="schedule-day-header">
+        <div class="day-header-pill" data-i18n="day1_header">Friday, January 1, 2027</div>
+        <div class="day-samvat-date" data-i18n="day1_samvat">સવંત ૨૦૮૩ માગશર વદ નોમ</div>
+      </div>
+
+      <div class="events-grid" style="max-width: 680px; margin: 0 auto 3rem auto;">
+        <!-- Ganesh Sthapana -->
+        <div class="event-card">
+          <div>
+            <div class="event-time-badge">
+              <i class="fa-regular fa-clock"></i>
+              <span data-i18n="event_ganesh_time">1:45 PM (બપોરે ૧.૪૫ કલાકે)</span>
+            </div>
+            <h3 class="event-card-title">Ganesh Sthapana</h3>
+            <h4 class="event-card-gujarati-title">ગણેશ સ્થાપના</h4>
+            <p class="event-card-desc" data-i18n="event_ganesh_desc">
+              Seeking divine blessings of Lord Ganesha for an auspicious start to the wedding festivities.
+            </p>
+          </div>
+          <div>
+            <div class="event-venue-info">
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <strong>Residence (અમારા નિવાસ સ્થાને)</strong><br>
+                889-Vaikunth Society, Near Shree Ambe Vidyalaya, Waghodia Road, Vadodara
+              </div>
+            </div>
+            <div class="event-card-actions">
+              <a href="#venue" class="btn-card-action">View Map</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DAY 2: Saturday, 02-01-2027 -->
+      <div class="schedule-day-header">
+        <div class="day-header-pill" data-i18n="day2_header">Saturday, January 2, 2027</div>
+        <div class="day-samvat-date" data-i18n="day2_samvat">સવંત ૨૦૮૩ માગશર વદ દસમ</div>
+      </div>
+
+      <div class="events-grid">
+
+        <!-- Mosalu -->
+        <div class="event-card">
+          <div>
+            <div class="event-time-badge">
+              <i class="fa-regular fa-clock"></i>
+              <span data-i18n="event_mosalu_time">7:30 AM (સવારે ૭.૩૦ કલાકે)</span>
+            </div>
+            <h3 class="event-card-title">Mosalu (Mameru)</h3>
+            <h4 class="event-card-gujarati-title">મોસાળુ</h4>
+            <p class="event-card-desc" data-i18n="event_mosalu_desc">
+              Traditional welcoming of maternal relatives bearing blessings, auspicious gifts, and wedding jewelry.
+            </p>
+          </div>
+          <div>
+            <div class="event-venue-info">
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <strong>Bhavan's Party Plot</strong><br>
+                Next to SSV-3 School, Bapod, Vadodara
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Grah Shanti -->
+        <div class="event-card">
+          <div>
+            <div class="event-time-badge">
+              <i class="fa-regular fa-clock"></i>
+              <span data-i18n="event_grahshanti_time">9:30 AM (સવારે ૯.૩૦ કલાકે)</span>
+            </div>
+            <h3 class="event-card-title">Grah Shanti</h3>
+            <h4 class="event-card-gujarati-title">ગ્રહશાંતિ</h4>
+            <p class="event-card-desc" data-i18n="event_grahshanti_desc">
+              Sacred Vedic fire ritual invoked to seek peace and harmony from the nine celestial planets.
+            </p>
+          </div>
+          <div>
+            <div class="event-venue-info">
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <strong>Bhavan's Party Plot</strong><br>
+                Next to SSV-3 School, Bapod, Vadodara
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Shubh Lagna -->
+        <div class="event-card">
+          <div>
+            <div class="event-time-badge">
+              <i class="fa-regular fa-clock"></i>
+              <span data-i18n="event_lagna_time">Auspicious Muhurat (શુભ મુહૂર્તે)</span>
+            </div>
+            <h3 class="event-card-title">Shubh Lagna</h3>
+            <h4 class="event-card-gujarati-title">શુભ લગ્ન (હસ્તમેળાપ)</h4>
+            <p class="event-card-desc" data-i18n="event_lagna_desc">
+              Sacred union of Ritu & Bhavya with Varmala exchange, Kanyadaan, Hastamelap, and Saptapadi vows.
+            </p>
+          </div>
+          <div>
+            <div class="event-venue-info">
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <strong>Bhavan's Party Plot</strong><br>
+                Next to SSV-3 School, Bapod, Vadodara
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Priti Bhojan -->
+        <div class="event-card">
+          <div>
+            <div class="event-time-badge">
+              <i class="fa-regular fa-clock"></i>
+              <span data-i18n="event_priti_time">12:00 PM onwards (બપોરે ૧૨.૦૦ કલાકે)</span>
+            </div>
+            <h3 class="event-card-title">Priti Bhojan</h3>
+            <h4 class="event-card-gujarati-title">પ્રિતિ ભોજન</h4>
+            <p class="event-card-desc" data-i18n="event_priti_desc">
+              Grand festive wedding feast featuring authentic Gujarati delicacies and sweets to celebrate with family.
+            </p>
+          </div>
+          <div>
+            <div class="event-venue-info">
+              <i class="fa-solid fa-utensils"></i>
+              <div>
+                <strong>Bhavan's Party Plot</strong><br>
+                Next to SSV-3 School, Bapod, Vadodara
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Venues & Travel Section
+       ========================================================================== -->
+  <section id="venue" class="venue-section">
+    <div class="container">
+
+      <div class="section-header">
+        <span class="section-subtitle" data-i18n="venue_subtitle">For Our Traveling Guests</span>
+        <h2 class="section-title" data-i18n="venue_title">✦ શુભ સ્થળ ✦</h2>
+        <div class="section-divider">
+          <i class="fa-solid fa-map-location-dot divider-icon"></i>
+        </div>
+        <p class="section-description" data-i18n="venue_desc">
+          Detailed locations and convenient navigation links for our celebration venues in Vadodara.
+        </p>
+      </div>
+
+      <!-- Venue Cards Grid -->
+      <div class="venue-cards-wrapper">
+
+        <!-- Venue 1: Bhavan's Party Plot -->
+        <div class="venue-card">
+          <span class="venue-badge-type" data-i18n="venue1_type">Main Wedding Venue</span>
+          <h3 class="venue-name">Bhavan's Party Plot</h3>
+          <h4 class="venue-gujarati-name">ભવન્સ પાર્ટી પ્લોટ</h4>
+          <p class="venue-address">
+            <i class="fa-solid fa-location-dot maroon-text"></i>
+            <span data-i18n="venue1_addr">એસએસવી-૩ સ્કૂલની બાજુમાં, બાપોદ, વડોદરા</span>
+          </p>
+          <div class="venue-map-embed">
+            <!-- OpenStreetMap / Google Map Directions Embed -->
+            <iframe 
+              src="https://maps.google.com/maps?q=Bhavans+Party+Plot+Bapod+Vadodara&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Bhavan's Party Plot Location Map">
+            </iframe>
+          </div>
+          <a href="https://www.google.com/maps/search/?api=1&query=Bhavans+Party+Plot+Bapod+Vadodara" target="_blank" rel="noopener" class="btn btn-primary" style="width: 100%;">
+            <i class="fa-solid fa-diamond-turn-right"></i>
+            <span data-i18n="btn_directions">Get Directions</span>
+          </a>
+        </div>
+
+        <!-- Venue 2: Residence -->
+        <div class="venue-card">
+          <span class="venue-badge-type" data-i18n="venue2_type">Residence Venue (Ganesh Sthapana)</span>
+          <h3 class="venue-name">Patel Family Residence</h3>
+          <h4 class="venue-gujarati-name">અમારા નિવાસ સ્થાને</h4>
+          <p class="venue-address">
+            <i class="fa-solid fa-house-chimney maroon-text"></i>
+            <span data-i18n="venue2_addr">૮૮૯-વૈકુંઠ સોસાયટી, શ્રી અંબે વિદ્યાલય ની નજીક, વાઘોડિયા રોડ, વડોદરા</span>
+          </p>
+          <div class="venue-map-embed">
+            <iframe 
+              src="https://maps.google.com/maps?q=Ambe+Vidyalaya+Waghodia+Road+Vadodara&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Residence Location Map">
+            </iframe>
+          </div>
+          <a href="https://www.google.com/maps/search/?api=1&query=Ambe+Vidyalaya+Waghodia+Road+Vadodara" target="_blank" rel="noopener" class="btn btn-secondary" style="width: 100%;">
+            <i class="fa-solid fa-diamond-turn-right"></i>
+            <span data-i18n="btn_directions">Get Directions</span>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Traveling Guide Box -->
+      <div class="travel-guide-box">
+        <h3 class="travel-guide-title" data-i18n="travel_title">Getting to Vadodara</h3>
+        <div class="travel-modes-grid">
+          
+          <div class="travel-mode-item">
+            <div class="travel-mode-icon">
+              <i class="fa-solid fa-plane-departure"></i>
+            </div>
+            <div class="travel-mode-content">
+              <h4>By Flight</h4>
+              <p data-i18n="travel_flight">Vadodara Airport (BDQ) is ~7 km away (approx 15-20 mins by cab).</p>
+            </div>
+          </div>
+
+          <div class="travel-mode-item">
+            <div class="travel-mode-icon">
+              <i class="fa-solid fa-train"></i>
+            </div>
+            <div class="travel-mode-content">
+              <h4>By Train</h4>
+              <p data-i18n="travel_train">Vadodara Junction (BRC) is ~7-8 km away with 24/7 taxi and auto service.</p>
+            </div>
+          </div>
+
+          <div class="travel-mode-item">
+            <div class="travel-mode-icon">
+              <i class="fa-solid fa-car"></i>
+            </div>
+            <div class="travel-mode-content">
+              <h4>By Road</h4>
+              <p data-i18n="travel_road">Easily accessible via NH 48, Waghodia Crossing, and Ajwa Road.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Family & Blessings Section
+       ========================================================================== -->
+  <section id="family" class="family-section">
+    <div class="container">
+
+      <div class="section-header">
+        <span class="section-subtitle" data-i18n="family_subtitle">With Warm Greetings & Regards</span>
+        <h2 class="section-title" data-i18n="family_title">પરિવાર અને સ્નેહીજનો</h2>
+        <div class="section-divider">
+          <i class="fa-solid fa-hands-praying divider-icon"></i>
+        </div>
+      </div>
+
+      <!-- Hosts Card (નિમંત્રક) -->
+      <div class="hosts-card">
+        <span class="hosts-tag" data-i18n="hosts_tag">નિમંત્રક (Hosts)</span>
+        <h3 class="hosts-names" data-i18n="hosts_names">
+          શ્રી વિજયભાઈ રસિકભાઈ પટેલ<br>
+          અ.સૌ. અલ્કાબેન વિજયભાઈ પટેલ
+        </h3>
+        <p class="hosts-address" data-i18n="hosts_addr">
+          ૮૮૯-વૈકુંઠ સોસાયટી, શ્રી અંબે વિદ્યાલય ની નજીક, વાઘોડિયા રોડ, વડોદરા.
+        </p>
+        <div class="hosts-contact-links">
+          <a href="tel:+919824059163" class="btn-contact">
+            <i class="fa-solid fa-phone"></i>
+            <span>+91 98240 59163</span>
+          </a>
+          <a href="tel:+919624663102" class="btn-contact">
+            <i class="fa-solid fa-phone"></i>
+            <span>+91 96246 63102</span>
+          </a>
+          <a href="https://wa.me/919824059163?text=Jai%20Yogeshwar!%20Heartiest%20congratulations%20on%20Ritu%20and%20Bhavya%27s%20wedding!" target="_blank" rel="noopener" class="btn-contact" style="background: #25d366; color: #fff; border-color: #25d366;">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>WhatsApp</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Snehathin Grid (લિ. આપના સ્નેહાધિન) -->
+      <div class="family-block-header">
+        <h3 class="family-block-title" data-i18n="snehathin_title">લિ. આપના સ્નેહાધિન (Affectionately Yours)</h3>
+      </div>
+
+      <div class="snehathin-grid">
+        <div class="snehathin-card">
+          <div class="snehathin-gujarati-name">ગં.સ્વ. હંસાબેન રસિકભાઈ પટેલ</div>
+          <div class="snehathin-english-name">Gangs. Hansaben Rasikbhai Patel</div>
+        </div>
+        <div class="snehathin-card">
+          <div class="snehathin-gujarati-name">ગં.સ્વ. અંબાબેન ચુનીલાલ પટેલ</div>
+          <div class="snehathin-english-name">Gangs. Ambaben Chunilal Patel</div>
+        </div>
+        <div class="snehathin-card">
+          <div class="snehathin-gujarati-name">ધર્મેન્દ્રભાઈ રસિકભાઈ પટેલ</div>
+          <div class="snehathin-gujarati-name">અ.સૌ. જાગૃતિબેન ધર્મેન્દ્રભાઈ પટેલ</div>
+          <div class="snehathin-english-name">Dharmendrabhai & Jagrutiben Patel</div>
+        </div>
+        <div class="snehathin-card">
+          <div class="snehathin-gujarati-name">રમેશભાઈ ચુનીલાલ પટેલ</div>
+          <div class="snehathin-gujarati-name">અ.સૌ. સાધનાબેન રમેશભાઈ પટેલ</div>
+          <div class="snehathin-english-name">Rameshbhai & Sadhanaben Patel</div>
+        </div>
+        <div class="snehathin-card">
+          <div class="snehathin-gujarati-name">દિલીપભાઈ અંબાલાલ પટેલ</div>
+          <div class="snehathin-gujarati-name">અ.સૌ. વર્ષાબેન દિલીપભાઈ પટેલ</div>
+          <div class="snehathin-english-name">Dilipphai & Varshaben Patel</div>
+        </div>
+        <div class="snehathin-card">
+          <div class="snehathin-gujarati-name">ભરતભાઈ ચુનીલાલ પટેલ</div>
+          <div class="snehathin-gujarati-name">અ.સૌ. ચંપાબેન ભરતભાઈ પટેલ</div>
+          <div class="snehathin-english-name">Bharatbhai & Champaben Patel</div>
+        </div>
+        <div class="snehathin-card">
+          <div class="snehathin-gujarati-name">કિરણકુમાર નગીનભાઈ પટેલ</div>
+          <div class="snehathin-gujarati-name">અ.સૌ. સંગીતાબેન કિરણકુમાર પટેલ</div>
+          <div class="snehathin-english-name">Kirankumar & Sangeetaben Patel</div>
+        </div>
+        <div class="snehathin-card">
+          <div class="snehathin-gujarati-name">કુંદનકુમાર નગીનભાઈ પટેલ</div>
+          <div class="snehathin-gujarati-name">અ.સૌ. જ્યોતિબેન કુંદનકુમાર પટેલ</div>
+          <div class="snehathin-english-name">Kundankumar & Jyotiben Patel</div>
+        </div>
+        <div class="snehathin-card">
+          <div class="snehathin-gujarati-name">ધૈર્યકુમાર ઘનશ્યામભાઈ પટેલ</div>
+          <div class="snehathin-gujarati-name">અ.સૌ. હેમલ ધૈર્યકુમાર પટેલ</div>
+          <div class="snehathin-english-name">Dhairyakumar & Hemal Patel</div>
+        </div>
+      </div>
+
+      <!-- Darshanabhilashi (લિ. આપના દર્શનાભિલાષી - Welcoming Younger Generation / Cousins) -->
+      <div class="family-block-header">
+        <h3 class="family-block-title" data-i18n="darshan_title">લિ. આપના દર્શનાભિલાષી</h3>
+        <p class="darshanabhilashi-note" data-i18n="darshan_note">
+          Excitedly waiting to welcome everyone to our dear sister's wedding!
+        </p>
+      </div>
+
+      <div class="darshanabhilashi-wrapper">
+        <div class="cousins-chips-container">
+          <div class="cousin-chip"><i class="fa-solid fa-sparkles"></i> અક્ષત ધર્મેન્દ્રભાઈ પટેલ (Akshat)</div>
+          <div class="cousin-chip"><i class="fa-solid fa-sparkles"></i> સાર્થ વિજયભાઈ પટેલ (Sarth)</div>
+          <div class="cousin-chip"><i class="fa-solid fa-sparkles"></i> હર્ષ કુંદનભાઈ પટેલ (Harsh)</div>
+          <div class="cousin-chip"><i class="fa-solid fa-sparkles"></i> વૈદેહિ અમિતકુમાર પટેલ (Vaidehi)</div>
+          <div class="cousin-chip"><i class="fa-solid fa-sparkles"></i> અભિષેક અમિતકુમાર પટેલ (Abhishek)</div>
+          <div class="cousin-chip"><i class="fa-solid fa-sparkles"></i> જતન હેમલકુમાર ભટ્ટ (Jatan)</div>
+          <div class="cousin-chip"><i class="fa-solid fa-sparkles"></i> ધૈર્ય કુંદનભાઈ પટેલ (Dhairya)</div>
+          <div class="cousin-chip"><i class="fa-solid fa-sparkles"></i> દિયા ધર્મેન્દ્રભાઈ પટેલ (Diya)</div>
+          <div class="cousin-chip"><i class="fa-solid fa-sparkles"></i> આરવ નરેન્દ્રકુમાર પટેલ (Aarav)</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FAQ Section
+       ========================================================================== -->
+  <section id="faq" class="faq-section">
+    <div class="container">
+
+      <div class="section-header">
+        <span class="section-subtitle" data-i18n="faq_subtitle">You've Got Questions…</span>
+        <h2 class="section-title" data-i18n="faq_title">Guest Guide & FAQs</h2>
+        <div class="section-divider">
+          <i class="fa-regular fa-circle-question divider-icon"></i>
+        </div>
+      </div>
+
+      <div class="faq-accordion-container">
+        
+        <div class="faq-item active">
+          <button class="faq-question-btn">
+            <span data-i18n="faq_q1">What is the recommended dress code?</span>
+            <i class="fa-solid fa-chevron-down faq-icon-arrow"></i>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faq_a1">Traditional Indian festive / ethnic wear! Elegant sarees, lehengas, anarkalis for ladies; kurta-pajamas, bandhgalas, or sherwanis for gentlemen.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question-btn">
+            <span data-i18n="faq_q2">What is the policy regarding gifts?</span>
+            <i class="fa-solid fa-chevron-down faq-icon-arrow"></i>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faq_a2">Your warm presence, love, and heartfelt blessings for Ritu & Bhavya are the greatest gifts we could ever ask for! (સહર્ષ આશીર્વાદ એ જ અમારી સૌથી મોટી ભેટ છે.)</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question-btn">
+            <span data-i18n="faq_q3">Is parking available at Bhavan's Party Plot?</span>
+            <i class="fa-solid fa-chevron-down faq-icon-arrow"></i>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faq_a3">Yes, ample parking space is available at the venue premises for both four-wheelers and two-wheelers.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question-btn">
+            <span data-i18n="faq_q4">Whom can we contact for assistance or accommodations?</span>
+            <i class="fa-solid fa-chevron-down faq-icon-arrow"></i>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faq_a4">Feel free to call or WhatsApp our hosts Shri Vijaybhai (+91 98240 59163) or Alkaben (+91 96246 63102).</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ==========================================================================
+       Original Kankotri Modal Viewer
+       ========================================================================== -->
+  <div id="kankotriModal" class="modal-overlay">
+    <div class="modal-content">
+      <button id="btnCloseKankotriModal" class="modal-close-btn">&times;</button>
+      <div style="text-align: center; margin-bottom: 1.5rem;">
+        <h3 class="font-display maroon-text" style="font-size: 1.8rem; margin-bottom: 0.3rem;">આમંત્રણ પત્રિકા</h3>
+        <p style="color: var(--color-text-muted); font-size: 0.95rem;">Official Wedding Invitation Card (Original PDF Document)</p>
+      </div>
+
+      <div style="display: flex; justify-content: center; gap: 1rem; margin-bottom: 1.5rem;">
+        <a href="wedding_invitation_kankotri.pdf" target="_blank" download="Ritu_Bhavya_Wedding_Invitation.pdf" class="btn btn-gold">
+          <i class="fa-solid fa-download"></i> Download Original PDF
+        </a>
+        <a href="wedding_invitation_kankotri.pdf" target="_blank" class="btn btn-secondary">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i> Open in New Tab
+        </a>
+      </div>
+
+      <div style="width: 100%; height: 500px; border-radius: var(--radius-md); overflow: hidden; border: 1px solid rgba(197, 157, 95, 0.4);">
+        <iframe src="wedding_invitation_kankotri.pdf" width="100%" height="100%" style="border: none;"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       Footer
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      
+      <div class="footer-monogram">R <span>&</span> B</div>
+      <p class="footer-tagline" data-i18n="footer_tagline">Together with our families, we thank you for your love & blessings</p>
+      <p class="footer-date-venue" data-i18n="footer_date_venue">Saturday, January 2, 2027 • Bhavan's Party Plot, Vadodara</p>
+
+      <div class="footer-social-links">
+        <a href="https://wa.me/919824059163?text=Jai%20Yogeshwar!%20Heartiest%20congratulations%20on%20Ritu%20and%20Bhavya%27s%20wedding!" target="_blank" rel="noopener" class="footer-social-link" title="Share on WhatsApp">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <a href="tel:+919824059163" class="footer-social-link" title="Call Host">
+          <i class="fa-solid fa-phone"></i>
+        </a>
+        <a href="https://www.google.com/maps/search/?api=1&query=Bhavans+Party+Plot+Bapod+Vadodara" target="_blank" rel="noopener" class="footer-social-link" title="Venue Map">
+          <i class="fa-solid fa-map-location-dot"></i>
+        </a>
+        <a href="wedding_invitation_kankotri.pdf" download class="footer-social-link" title="Download Kankotri">
+          <i class="fa-solid fa-file-arrow-down"></i>
+        </a>
+      </div>
+
+      <div class="footer-bottom">
+        <p data-i18n="footer_copy">© 2027 Ritu & Bhavya Wedding Invitation. Lovingly crafted for our dear Didi.</p>
+        <p style="font-size: 0.78rem; margin-top: 0.5rem; opacity: 0.7;">Inspired by Wix "Wedding Invitation (Romantic)" Template • Designed for Family Celebrations</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
