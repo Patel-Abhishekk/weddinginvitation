@@ -68,15 +68,20 @@ document.addEventListener('DOMContentLoaded', () => {
       event_grahshanti_time: "9:30 AM",
       event_grahshanti_loc: "Bhavan's Party Plot, Bapod, Vadodara",
 
+      event_lunch_title: "Wedding Lunch (Priti Bhojan)",
+      event_lunch_desc: "Traditional auspicious Gujarati wedding lunch banquet with family and guests.",
+      event_lunch_time: "12:00 PM",
+      event_lunch_loc: "Bhavan's Party Plot, Bapod, Vadodara",
+
       event_lagna_title: "Shubh Lagna & Hastamelap",
-      event_lagna_desc: "Sacred union of Ritu & Bhavya with Varmala exchange, Kanyadaan, Hastamelap, and Saptapadi vows.",
-      event_lagna_time: "Auspicious Muhurat",
+      event_lagna_desc: "Sacred Vedic wedding ceremony, Varmala exchange, Kanyadaan, Hastamelap, and Saptapadi vows.",
+      event_lagna_time: "6:00 PM",
       event_lagna_loc: "Bhavan's Party Plot, Bapod, Vadodara",
 
-      event_priti_title: "Priti Bhojan (Wedding Feast)",
-      event_priti_desc: "Grand festive banquet with traditional Gujarati delicacies and desserts to celebrate with family and friends.",
-      event_priti_time: "12:00 PM onwards",
-      event_priti_loc: "Bhavan's Party Plot, Bapod, Vadodara",
+      event_dinner_title: "Wedding Dinner (Priti Bhojan)",
+      event_dinner_desc: "Grand festive wedding dinner reception celebrating the union of Ritu & Bhavya with family and friends.",
+      event_dinner_time: "6:00 PM onwards",
+      event_dinner_loc: "Bhavan's Party Plot, Bapod, Vadodara",
 
       venue_subtitle: "For Our Traveling Guests",
       venue_title: "Venues & Directions",
@@ -181,15 +186,20 @@ document.addEventListener('DOMContentLoaded', () => {
       event_grahshanti_time: "સવારે ૯.૩૦ કલાકે",
       event_grahshanti_loc: "ભવન્સ પાર્ટી પ્લોટ, એસએસવી-૩ સ્કૂલની બાજુમાં, બાપોદ, વડોદરા.",
 
+      event_lunch_title: "પ્રિતિ ભોજન (બપોરનું ભોજન - Lunch)",
+      event_lunch_desc: "પરિવારજનો તથા આમંત્રિત સ્નેહીજનો માટે મંગલ બપોરનું પ્રિતિ ભોજન સમારોહ.",
+      event_lunch_time: "બપોરે ૧૨.૦૦ કલાકે",
+      event_lunch_loc: "ભવન્સ પાર્ટી પ્લોટ, એસએસવી-૩ સ્કૂલની બાજુમાં, બાપોદ, વડોદરા.",
+
       event_lagna_title: "શુભ લગ્ન (હસ્તમેળાપ)",
       event_lagna_desc: "વરમાળા, કન્યાદાન, હસ્તમેળાપ અને સપ્તપદીના મંગલ ફેરા સાથે પવિત્ર દાંપત્ય જીવનનો પ્રારંભ.",
-      event_lagna_time: "શુભ મુહૂર્તે",
+      event_lagna_time: "સાંજે ૬.૦૦ કલાકે",
       event_lagna_loc: "ભવન્સ પાર્ટી પ્લોટ, એસએસવી-૩ સ્કૂલની બાજુમાં, બાપોદ, વડોદરા.",
 
-      event_priti_title: "પ્રિતિ ભોજન",
-      event_priti_desc: "સગાં-સ્નેહીજનો તથા આમંત્રિત મહેમાનો માટે મંગલ ભોજન સમારોહ.",
-      event_priti_time: "બપોરે ૧૨.૦૦ કલાકે",
-      event_priti_loc: "ભવન્સ પાર્ટી પ્લોટ, એસએસવી-૩ સ્કૂલની બાજુમાં, બાપોદ, વડોદરા.",
+      event_dinner_title: "પ્રિતિ ભોજન (સાંજનું ભોજન - Dinner)",
+      event_dinner_desc: "સગાં-સ્નેહીજનો તથા આમંત્રિત મહેમાનો માટે સાંજનું ભવ્ય પ્રિતિ ભોજન સમારોહ.",
+      event_dinner_time: "સાંજે ૬.૦૦ કલાકેથી શરૂ",
+      event_dinner_loc: "ભવન્સ પાર્ટી પ્લોટ, એસએસવી-૩ સ્કૂલની બાજુમાં, બાપોદ, વડોદરા.",
 
       venue_subtitle: "મુલાકાતીઓ માટે માર્ગદર્શન",
       venue_title: "✦ શુભ સ્થળ ✦",
@@ -368,7 +378,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const gcalUrl = "https://calendar.google.com/calendar/render?action=TEMPLATE&text=" + 
         encodeURIComponent("Shubh Vivah: Ritu & Bhavya's Wedding") + 
         "&dates=20270102T020000Z/20270102T160000Z" + 
-        "&details=" + encodeURIComponent("Wedding ceremony and celebrations of Chi. Ritu & Chi. Bhavya. Venue: Bhavan's Party Plot, Near SSV-3 School, Bapod, Vadodara.") + 
+        "&details=" + encodeURIComponent("Wedding ceremony and celebrations of Chi. Ritu & Chi. Bhavya.\nSchedule: Ganesh Sthapana (Jan 1, 1:45 PM at Residence).\nJan 2: Mosalu (7:30 AM), Grah Shanti (9:30 AM), Lunch (12:00 PM), Shubh Lagna (6:00 PM), Dinner (6:00 PM onwards).\nVenue: Bhavan's Party Plot, Near SSV-3 School, Bapod, Vadodara.") + 
         "&location=" + encodeURIComponent("Bhavan's Party Plot, Next to SSV-3 School, Bapod, Vadodara, Gujarat");
 
       window.open(gcalUrl, '_blank');
